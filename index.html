@@ -2180,6 +2180,7 @@ function initDynamic(){
     {t:9.5,s:'FOLLOW THE COMPASS MARKER NORTH'}];
 }
 function resetGame(){
+  initAudio();
   for(let i=0;i<enemies.length;i++)scene.remove(enemies[i].group);
   enemies.length=0;
   for(let i=0;i<acids.length;i++)scene.remove(acids[i].mesh);
@@ -2305,6 +2306,7 @@ function buildWorld(){
 }
 function boot(){
   cacheDom();
+  hide(E.o_pause);hide(E.o_dead);hide(E.o_win);show(E.o_start);hide(E.hud);
   buildWorld();
   buildGunModels();
   buildParticles();
