@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2026-06-10T11:31:08.201059",
+    "input_data": {
+      "session_id": "5669e181-12a6-4259-bf86-adb82810aa71",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads/5669e181-12a6-4259-bf86-adb82810aa71.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix MIME type error for Three.js script",
+      "model": {
+        "id": "claude-fable-5[1m]",
+        "display_name": "Fable 5"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ]
+      },
+      "version": "2.1.170",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.6411865,
+        "total_duration_ms": 278700,
+        "total_api_duration_ms": 59654,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 31128,
+        "total_output_tokens": 196,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 196,
+          "cache_creation_input_tokens": 961,
+          "cache_read_input_tokens": 30165
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 3,
+          "resets_at": 1781124000
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781164800
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Fable 5]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main\u001b[0m | \u001b[90mv2.1.170\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-10T11:31:14.720184",
+    "input_data": {
+      "session_id": "5669e181-12a6-4259-bf86-adb82810aa71",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads/5669e181-12a6-4259-bf86-adb82810aa71.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix MIME type error for Three.js script",
+      "model": {
+        "id": "claude-fable-5[1m]",
+        "display_name": "Fable 5"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ]
+      },
+      "version": "2.1.170",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.6901075,
+        "total_duration_ms": 285262,
+        "total_api_duration_ms": 66201,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 31506,
+        "total_output_tokens": 261,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 261,
+          "cache_creation_input_tokens": 378,
+          "cache_read_input_tokens": 31126
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 3,
+          "resets_at": 1781124000
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781164800
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Fable 5]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.170\u001b[0m"
+  }
+]
