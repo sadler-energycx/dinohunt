@@ -11,7 +11,10 @@ const camera3=new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeigh
 camera3.rotation.order='YXZ';
 const L3_HIP_FOV=60,L3_SCOPE_FOV=20;
 const L3={built:false,gunVM:null,muzzle:null,muzzleT:0,
-  eye:new THREE.Vector3(0,11.0,70),      // fixed gunner position on the rampart (eye ~1.6 above the deck)
+  eye:new THREE.Vector3(0,11.0,70),      // gunner position on the rampart (eye ~1.6 above the deck)
+  eyeY:11.0,walkSpeed:9,                  // free movement along the rampart deck
+  // walkable bounds on the deck (inside the parapet & side walls)
+  minX:-10.4,maxX:10.4,minZ:70.2,maxZ:78.4,
   yaw:0,pitch:-0.16,aiming:false,zoom:0,
   camDir:new THREE.Vector3(0,0,-1),aimPt:new THREE.Vector3(),
   mag:8,magSize:8,res:240,reloading:0,fireCd:0,
@@ -314,6 +317,7 @@ function startLevel3(){
   G.level=3;G.state='PLAYING';
   for(let i=0;i<L3.dinos.length;i++)scene3.remove(L3.dinos[i].group);L3.dinos.length=0;
   l3SpawnSheep();
+  L3.eye.set(0,L3.eyeY,70);
   L3.yaw=0;L3.pitch=-0.16;L3.aiming=false;L3.zoom=0;
   L3.mag=L3.magSize;L3.res=240;L3.reloading=0;L3.fireCd=0;L3.muzzleT=0;
   L3.kills=0;L3.shots=0;L3.hits=0;L3.time=0;L3.spawnT=2.4;
@@ -356,7 +360,22 @@ function updateLevel3(dt){
   L3.zoom=clamp(L3.zoom+(L3.aiming?dt*6:-dt*6),0,1);
   camera3.fov=lerp(L3_HIP_FOV,L3_SCOPE_FOV,L3.zoom);
   camera3.updateProjectionMatrix();
-  // fixed gunner on the rampart, free-look aim
+  // free movement along the rampart deck + free-look aim
+  let ix=0,iz=0;
+  if(keys.KeyW)iz-=1;
+  if(keys.KeyS)iz+=1;
+  if(keys.KeyA)ix-=1;
+  if(keys.KeyD)ix+=1;
+  if(ix||iz){
+    const sy=Math.sin(L3.yaw),cy=Math.cos(L3.yaw);
+    // forward (-z in camera space) and strafe, flattened to the deck plane
+    let mx=ix*cy+iz*sy,mz=iz*cy-ix*sy;
+    const ml=Math.hypot(mx,mz)||1;mx/=ml;mz/=ml;
+    const spd=L3.walkSpeed*((keys.ShiftLeft||keys.ShiftRight)?1.7:1);
+    L3.eye.x=clamp(L3.eye.x+mx*spd*dt,L3.minX,L3.maxX);
+    L3.eye.z=clamp(L3.eye.z+mz*spd*dt,L3.minZ,L3.maxZ);
+  }
+  L3.eye.y=L3.eyeY;
   camera3.position.copy(L3.eye);
   camera3.rotation.set(L3.pitch,L3.yaw,0);
   L3.camDir.set(0,0,-1).applyEuler(camera3.rotation).normalize();
