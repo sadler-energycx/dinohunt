@@ -1,0 +1,38 @@
+'use strict';
+function buildWorld(){
+  buildTerrain();
+  buildVegetation();
+  buildCrashSite();
+  buildHighway();
+  buildCity();
+  buildBridge();
+  buildTower();
+  buildBeaconFx();
+  buildCanyon();
+  buildHaven();
+}
+function boot(){
+  cacheDom();
+  G.level=1;
+  hide(E.o_pause);hide(E.o_dead);hide(E.o_win);hide(E.l2hud);show(E.o_start);hide(E.hud);
+  refreshMenu();
+  buildWorld();
+  buildGunModels();
+  buildParticles();
+  buildTracers();
+  buildSpores();
+  buildObjBeam();
+  player.pos.y=groundHeight(0,228);
+  initDynamic();
+  setObjective(0);
+  camera.position.set(8,5,246);
+  camera.lookAt(0,6,208);
+  bindEvents();
+  requestAnimationFrame(animate);
+}
+window.__T={G:G,player:player,enemies:enemies,WPN:WPN,fireWeapon:fireWeapon,
+  beaconActivate:beaconActivate,resetGame:resetGame,killPlayer:killPlayer,winGame:winGame,
+  spitAcid:spitAcid,activateTrex:activateTrex,damageEnemy:damageEnemy,
+  advanceObjective:advanceObjective,playerDamage:playerDamage,beginPlay:beginPlay,applyLook:applyLook,
+  startLevel2:startLevel2,L2:L2,startLevel3:startLevel3,L3:L3,PROGRESS:PROGRESS,returnToMenu:returnToMenu};
+boot();

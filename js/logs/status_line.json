@@ -1,0 +1,886 @@
+[
+  {
+    "timestamp": "2026-06-16T14:29:08.737829",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 6.485318,
+        "total_duration_ms": 1187011,
+        "total_api_duration_ms": 858649,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 174536,
+        "total_output_tokens": 409,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 409,
+          "cache_creation_input_tokens": 1928,
+          "cache_read_input_tokens": 172606
+        },
+        "used_percentage": 17,
+        "remaining_percentage": 83
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:18.779701",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 6.485318,
+        "total_duration_ms": 1197045,
+        "total_api_duration_ms": 858649,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 174960,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 424,
+          "cache_read_input_tokens": 174534
+        },
+        "used_percentage": 17,
+        "remaining_percentage": 83
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:19.336946",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 6.485318,
+        "total_duration_ms": 1197607,
+        "total_api_duration_ms": 858649,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 174960,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 424,
+          "cache_read_input_tokens": 174534
+        },
+        "used_percentage": 17,
+        "remaining_percentage": 83
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:20.626220",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 6.593435,
+        "total_duration_ms": 1198898,
+        "total_api_duration_ms": 870532,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 174960,
+        "total_output_tokens": 664,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 664,
+          "cache_creation_input_tokens": 424,
+          "cache_read_input_tokens": 174534
+        },
+        "used_percentage": 17,
+        "remaining_percentage": 83
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:24.378053",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.231213,
+        "total_duration_ms": 1202621,
+        "total_api_duration_ms": 873983,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 179325,
+        "total_output_tokens": 72,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 131,
+          "output_tokens": 72,
+          "cache_creation_input_tokens": 162708,
+          "cache_read_input_tokens": 16486
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:29.542819",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.231213,
+        "total_duration_ms": 1207789,
+        "total_api_duration_ms": 873983,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 179567,
+        "total_output_tokens": 50,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 70,
+          "output_tokens": 50,
+          "cache_creation_input_tokens": 303,
+          "cache_read_input_tokens": 179194
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:33.854719",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.32694,
+        "total_duration_ms": 1212112,
+        "total_api_duration_ms": 879712,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 179567,
+        "total_output_tokens": 110,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 70,
+          "output_tokens": 110,
+          "cache_creation_input_tokens": 303,
+          "cache_read_input_tokens": 179194
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:40.737958",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.32694,
+        "total_duration_ms": 1218995,
+        "total_api_duration_ms": 879712,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 179855,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 70,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 288,
+          "cache_read_input_tokens": 179497
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:41.040070",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.4306435,
+        "total_duration_ms": 1219306,
+        "total_api_duration_ms": 886969,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 179855,
+        "total_output_tokens": 429,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 70,
+          "output_tokens": 429,
+          "cache_creation_input_tokens": 288,
+          "cache_read_input_tokens": 179497
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:44.073081",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.4306435,
+        "total_duration_ms": 1222328,
+        "total_api_duration_ms": 886969,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 179855,
+        "total_output_tokens": 429,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 70,
+          "output_tokens": 429,
+          "cache_creation_input_tokens": 288,
+          "cache_read_input_tokens": 179497
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:52.871822",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.4306435,
+        "total_duration_ms": 1231122,
+        "total_api_duration_ms": 886969,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 180319,
+        "total_output_tokens": 6,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 6,
+          "cache_creation_input_tokens": 532,
+          "cache_read_input_tokens": 179785
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:54.302368",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.4306435,
+        "total_duration_ms": 1232552,
+        "total_api_duration_ms": 886969,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 180319,
+        "total_output_tokens": 6,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 6,
+          "cache_creation_input_tokens": 532,
+          "cache_read_input_tokens": 179785
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T14:29:55.544966",
+    "input_data": {
+      "session_id": "a3aa6644-0797-41fd-bf92-047e0045bf60",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/a3aa6644-0797-41fd-bf92-047e0045bf60.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt/js",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Design helicopter shooter game level with progression",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt/js",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 8.544166,
+        "total_duration_ms": 1233815,
+        "total_api_duration_ms": 898540,
+        "total_lines_added": 559,
+        "total_lines_removed": 27
+      },
+      "context_window": {
+        "total_input_tokens": 180319,
+        "total_output_tokens": 732,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 732,
+          "cache_creation_input_tokens": 532,
+          "cache_read_input_tokens": 179785
+        },
+        "used_percentage": 18,
+        "remaining_percentage": 82
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 2,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 js\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  }
+]
