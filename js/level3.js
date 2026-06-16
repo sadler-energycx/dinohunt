@@ -102,12 +102,13 @@ function buildLevel3(){
   base.position.set(0,4.5,74);base.castShadow=true;base.receiveShadow=true;scene3.add(base);
   const deck=new THREE.Mesh(new THREE.BoxGeometry(24,0.6,10),stoneD);
   deck.position.set(0,9.1,74);scene3.add(deck);
-  // front parapet with crenellations (toward the field, -z)
-  const para=new THREE.Mesh(new THREE.BoxGeometry(24,1.5,1.1),stone);
-  para.position.set(0,9.9,69.2);para.castShadow=true;scene3.add(para);
+  // front parapet with crenellations (toward the field, -z) — kept below the
+  // gunner's eye (y=11) so the player can see over the wall
+  const para=new THREE.Mesh(new THREE.BoxGeometry(24,1.2,1.1),stone);
+  para.position.set(0,9.6,69.2);para.castShadow=true;scene3.add(para);
   for(let i=-5;i<=5;i++){
-    const m=new THREE.Mesh(new THREE.BoxGeometry(1.4,1.3,1.1),stone);
-    m.position.set(i*2.1,11.2,69.2);m.castShadow=true;scene3.add(m);
+    const m=new THREE.Mesh(new THREE.BoxGeometry(1.4,0.9,1.1),stone);
+    m.position.set(i*2.1,9.95,69.2);m.castShadow=true;scene3.add(m);
   }
   // side walls
   for(const sx of [-1,1]){
