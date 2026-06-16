@@ -11,7 +11,7 @@ const camera3=new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeigh
 camera3.rotation.order='YXZ';
 const L3_HIP_FOV=60,L3_SCOPE_FOV=20;
 const L3={built:false,gunVM:null,muzzle:null,muzzleT:0,
-  eye:new THREE.Vector3(0,9.4,70),       // fixed gunner position on the rampart
+  eye:new THREE.Vector3(0,11.0,70),      // fixed gunner position on the rampart (eye ~1.6 above the deck)
   yaw:0,pitch:-0.16,aiming:false,zoom:0,
   camDir:new THREE.Vector3(0,0,-1),aimPt:new THREE.Vector3(),
   mag:8,magSize:8,res:240,reloading:0,fireCd:0,

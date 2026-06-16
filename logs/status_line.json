@@ -35996,5 +35996,1689 @@
       }
     },
     "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 9m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:07:56.502832",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0,
+        "total_duration_ms": 494,
+        "total_api_duration_ms": 0,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "context_window_size": 1000000,
+        "current_usage": null,
+        "used_percentage": null,
+        "remaining_percentage": null
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[32m\ud83d\udfe2 Pro 8% \u2022 2h52m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:40.049320",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.001235,
+        "total_duration_ms": 44145,
+        "total_api_duration_ms": 2436,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 27903,
+        "total_output_tokens": 5,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 7822,
+          "output_tokens": 5,
+          "cache_creation_input_tokens": 3688,
+          "cache_read_input_tokens": 16393
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[32m\ud83d\udfe2 Pro 16% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:40.616001",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.0888715,
+        "total_duration_ms": 44752,
+        "total_api_duration_ms": 5110,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 27903,
+        "total_output_tokens": 138,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 7822,
+          "output_tokens": 138,
+          "cache_creation_input_tokens": 3688,
+          "cache_read_input_tokens": 16393
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[32m\ud83d\udfe2 Pro 24% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:41.234180",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.0888715,
+        "total_duration_ms": 45377,
+        "total_api_duration_ms": 5110,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 27903,
+        "total_output_tokens": 138,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 7822,
+          "output_tokens": 138,
+          "cache_creation_input_tokens": 3688,
+          "cache_read_input_tokens": 16393
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[32m\ud83d\udfe2 Pro 32% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:43.130423",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.18424200000000002,
+        "total_duration_ms": 47234,
+        "total_api_duration_ms": 6968,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 28390,
+        "total_output_tokens": 90,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 90,
+          "cache_creation_input_tokens": 8307,
+          "cache_read_input_tokens": 20081
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[32m\ud83d\udfe2 Pro 40% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:45.606255",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.20728100000000002,
+        "total_duration_ms": 49706,
+        "total_api_duration_ms": 9429,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 28936,
+        "total_output_tokens": 135,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 135,
+          "cache_creation_input_tokens": 546,
+          "cache_read_input_tokens": 28388
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[32m\ud83d\udfe2 Pro 48% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:48.591266",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.229638,
+        "total_duration_ms": 52655,
+        "total_api_duration_ms": 12375,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 29414,
+        "total_output_tokens": 124,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 124,
+          "cache_creation_input_tokens": 478,
+          "cache_read_input_tokens": 28934
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[33m\ud83d\udfe1 Pro 56% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:51.027090",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.229638,
+        "total_duration_ms": 55125,
+        "total_api_duration_ms": 12375,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 30484,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 1070,
+          "cache_read_input_tokens": 29412
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[33m\ud83d\udfe1 Pro 64% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:52.038087",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.260404,
+        "total_duration_ms": 56171,
+        "total_api_duration_ms": 15891,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 30484,
+        "total_output_tokens": 214,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 214,
+          "cache_creation_input_tokens": 1070,
+          "cache_read_input_tokens": 29412
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[33m\ud83d\udfe1 Pro 72% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:55.521444",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.260404,
+        "total_duration_ms": 59638,
+        "total_api_duration_ms": 15891,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 32097,
+        "total_output_tokens": 5,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 5,
+          "cache_creation_input_tokens": 1613,
+          "cache_read_input_tokens": 30482
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[33m\ud83d\udfe1 Pro 80% \u2022 2h51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:55.946179",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.29756000000000005,
+        "total_duration_ms": 60075,
+        "total_api_duration_ms": 19787,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 32097,
+        "total_output_tokens": 231,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 231,
+          "cache_creation_input_tokens": 1613,
+          "cache_read_input_tokens": 30482
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 88% \u2022 51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:08:59.209041",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.29756000000000005,
+        "total_duration_ms": 63335,
+        "total_api_duration_ms": 19787,
+        "total_lines_added": 0,
+        "total_lines_removed": 0
+      },
+      "context_window": {
+        "total_input_tokens": 32454,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 357,
+          "cache_read_input_tokens": 32095
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 51m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b11\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:11.982153",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.36001250000000007,
+        "total_duration_ms": 76108,
+        "total_api_duration_ms": 35781,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 32454,
+        "total_output_tokens": 1713,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 1713,
+          "cache_creation_input_tokens": 357,
+          "cache_read_input_tokens": 32095
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:14.594209",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.36001250000000007,
+        "total_duration_ms": 78706,
+        "total_api_duration_ms": 35781,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 34249,
+        "total_output_tokens": 4,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 4,
+          "cache_creation_input_tokens": 1795,
+          "cache_read_input_tokens": 32452
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:15.396227",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.39842350000000004,
+        "total_duration_ms": 79516,
+        "total_api_duration_ms": 39218,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 34249,
+        "total_output_tokens": 169,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 169,
+          "cache_creation_input_tokens": 1795,
+          "cache_read_input_tokens": 32452
+        },
+        "used_percentage": 3,
+        "remaining_percentage": 97
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:18.272345",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.39842350000000004,
+        "total_duration_ms": 82390,
+        "total_api_duration_ms": 39218,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 36278,
+        "total_output_tokens": 2,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 131,
+          "output_tokens": 2,
+          "cache_creation_input_tokens": 1900,
+          "cache_read_input_tokens": 34247
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:18.872464",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.44045200000000007,
+        "total_duration_ms": 82985,
+        "total_api_duration_ms": 42683,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 36278,
+        "total_output_tokens": 210,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 131,
+          "output_tokens": 210,
+          "cache_creation_input_tokens": 1900,
+          "cache_read_input_tokens": 34247
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:22.140710",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.46679050000000005,
+        "total_duration_ms": 86250,
+        "total_api_duration_ms": 45946,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 36682,
+        "total_output_tokens": 117,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 117,
+          "cache_creation_input_tokens": 533,
+          "cache_read_input_tokens": 36147
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:29.366196",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.46679050000000005,
+        "total_duration_ms": 93456,
+        "total_api_duration_ms": 45946,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 37794,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 1112,
+          "cache_read_input_tokens": 36680
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:30.996484",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.5061105,
+        "total_duration_ms": 95113,
+        "total_api_duration_ms": 54806,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 37794,
+        "total_output_tokens": 394,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 394,
+          "cache_creation_input_tokens": 1112,
+          "cache_read_input_tokens": 36680
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:38.434134",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.5061105,
+        "total_duration_ms": 102559,
+        "total_api_duration_ms": 54806,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 40446,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 2652,
+          "cache_read_input_tokens": 37792
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:39.784239",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.5061105,
+        "total_duration_ms": 103900,
+        "total_api_duration_ms": 54806,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 40446,
+        "total_output_tokens": 3,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 3,
+          "cache_creation_input_tokens": 2652,
+          "cache_read_input_tokens": 37792
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:40.885796",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.5684615000000001,
+        "total_duration_ms": 105013,
+        "total_api_duration_ms": 64687,
+        "total_lines_added": 10,
+        "total_lines_removed": 9
+      },
+      "context_window": {
+        "total_input_tokens": 40446,
+        "total_output_tokens": 677,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 677,
+          "cache_creation_input_tokens": 2652,
+          "cache_read_input_tokens": 37792
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b12\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:43.896540",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.6026835,
+        "total_duration_ms": 108024,
+        "total_api_duration_ms": 67666,
+        "total_lines_added": 11,
+        "total_lines_removed": 10
+      },
+      "context_window": {
+        "total_input_tokens": 41335,
+        "total_output_tokens": 204,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 204,
+          "cache_creation_input_tokens": 889,
+          "cache_read_input_tokens": 40444
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
+  },
+  {
+    "timestamp": "2026-06-16T15:09:50.692687",
+    "input_data": {
+      "session_id": "403fe05f-206f-49f8-8277-ddcb5153fb05",
+      "transcript_path": "/Users/simonadler/.claude/projects/-Users-simonadler-Downloads-dinohunt/403fe05f-206f-49f8-8277-ddcb5153fb05.jsonl",
+      "cwd": "/Users/simonadler/Downloads/dinohunt",
+      "effort": {
+        "level": "high"
+      },
+      "session_name": "Fix level unlocking and third level ground collision",
+      "model": {
+        "id": "claude-opus-4-8[1m]",
+        "display_name": "Opus 4.8 (1M context)"
+      },
+      "workspace": {
+        "current_dir": "/Users/simonadler/Downloads/dinohunt",
+        "project_dir": "/Users/simonadler/Downloads/dinohunt",
+        "added_dirs": [
+          "/Users/simonadler/Desktop/energyCX/cp3/src/data-wrapper/contracts/[id]/v2"
+        ],
+        "repo": {
+          "host": "github.com",
+          "owner": "sadler-energycx",
+          "name": "dinohunt"
+        }
+      },
+      "version": "2.1.178",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 0.63687,
+        "total_duration_ms": 114828,
+        "total_api_duration_ms": 74483,
+        "total_lines_added": 11,
+        "total_lines_removed": 10
+      },
+      "context_window": {
+        "total_input_tokens": 41621,
+        "total_output_tokens": 426,
+        "context_window_size": 1000000,
+        "current_usage": {
+          "input_tokens": 2,
+          "output_tokens": 426,
+          "cache_creation_input_tokens": 286,
+          "cache_read_input_tokens": 41333
+        },
+        "used_percentage": 4,
+        "remaining_percentage": 96
+      },
+      "exceeds_200k_tokens": false,
+      "fast_mode": false,
+      "thinking": {
+        "enabled": true
+      },
+      "rate_limits": {
+        "five_hour": {
+          "used_percentage": 4,
+          "resets_at": 1781654400
+        },
+        "seven_day": {
+          "used_percentage": 3,
+          "resets_at": 1781769600
+        }
+      }
+    },
+    "status_line_output": "\u001b[36m[Opus 4.8 (1M context)]\u001b[0m | \u001b[31m\ud83d\udd34 Pro 95% \u2022 50m\u001b[0m | \u001b[34m\ud83d\udcc1 dinohunt\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv2.1.178\u001b[0m"
   }
 ]

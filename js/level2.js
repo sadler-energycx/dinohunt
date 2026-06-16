@@ -9,27 +9,28 @@ const PROG_KEY='jurassicExodus.progress.v1';
 function loadProg(){try{return JSON.parse(localStorage.getItem(PROG_KEY))||{};}catch(e){return {};}}
 const PROGRESS=loadProg();
 function saveProg(){try{localStorage.setItem(PROG_KEY,JSON.stringify(PROGRESS));}catch(e){}}
-function levelUnlocked(lvl){return lvl===1||PROGRESS.l1===true;}
+function levelUnlocked(lvl){return lvl===1||PROGRESS['l'+(lvl-1)]===true;}
 function markComplete(lvl){if(!PROGRESS['l'+lvl]){PROGRESS['l'+lvl]=true;saveProg();}refreshMenu();}
 function refreshMenu(){
-  const unlocked=levelUnlocked(2);
+  const unlocked2=levelUnlocked(2);
+  const unlocked3=levelUnlocked(3);
   if(E.btnLvl2){
-    E.btnLvl2.disabled=!unlocked;
-    E.btnLvl2.innerHTML=unlocked
+    E.btnLvl2.disabled=!unlocked2;
+    E.btnLvl2.innerHTML=unlocked2
       ? '<span class="lvlNo">II</span>AIR CAVALRY<span class="lvlDesc">Clear the valley from a gunship — overheating chain gun</span>'
       : '<span class="lvlNo">II</span>AIR CAVALRY 🔒<span class="lvlDesc">Clear the valley from a gunship — finish Mission I to unlock</span>';
   }
   if(E.btnLvl3){
-    E.btnLvl3.disabled=!unlocked;
-    E.btnLvl3.innerHTML=unlocked
+    E.btnLvl3.disabled=!unlocked3;
+    E.btnLvl3.innerHTML=unlocked3
       ? '<span class="lvlNo">III</span>RAMPART WATCH<span class="lvlDesc">Snipe swooping raiders off the flock — scoped rifle, plenty of ammo</span>'
-      : '<span class="lvlNo">III</span>RAMPART WATCH 🔒<span class="lvlDesc">Snipe swooping raiders off the flock — finish Mission I to unlock</span>';
+      : '<span class="lvlNo">III</span>RAMPART WATCH 🔒<span class="lvlDesc">Snipe swooping raiders off the flock — finish Mission II to unlock</span>';
   }
   if(E.btnLvl1)E.btnLvl1.classList.toggle('done',PROGRESS.l1===true);
   if(E.btnLvl2)E.btnLvl2.classList.toggle('done',PROGRESS.l2===true);
   if(E.btnLvl3)E.btnLvl3.classList.toggle('done',PROGRESS.l3===true);
-  if(E.startTiny)E.startTiny.textContent=unlocked
-    ?'THREE MISSIONS UNLOCKED — CHOOSE YOUR HUNT.'
+  if(E.startTiny)E.startTiny.textContent=unlocked2
+    ?(unlocked3?'THREE MISSIONS UNLOCKED — CHOOSE YOUR HUNT.':'MISSION II UNLOCKED — CHOOSE YOUR HUNT.')
     :'FIVE ZONES NORTH. YOU ARE BEING HUNTED.';
 }
 
