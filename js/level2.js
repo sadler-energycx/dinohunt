@@ -120,15 +120,15 @@ function buildLevel2(){
   }
   geo.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));
   geo.computeVertexNormals();
-  const gm=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({vertexColors:true,roughness:1}));
+  const gm=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({vertexColors:true,roughness:1,map:texTile(TEX.grass,180,180)}));
   gm.receiveShadow=true;scene2.add(gm);
   // river for visual reference
   const river=new THREE.Mesh(new THREE.PlaneGeometry(1500,42),
     new THREE.MeshStandardMaterial({color:0x33503f,roughness:0.25,metalness:0.15,transparent:true,opacity:0.85}));
   river.rotation.x=-Math.PI/2;river.position.set(0,0.2,-120);scene2.add(river);
   // trees
-  const trunks=new THREE.InstancedMesh(new THREE.CylinderGeometry(0.5,0.8,9,6),matStd(0x4c3a26,0.95),300);
-  const cans=new THREE.InstancedMesh(new THREE.ConeGeometry(4,8,7),matStd(0x2f4a1f,0.95),300);
+  const trunks=new THREE.InstancedMesh(jitterGeo(new THREE.CylinderGeometry(0.5,0.8,9,6),0.12),matStd(0x4c3a26,0.95,0,{map:texTile(TEX.bark,2,3)}),300);
+  const cans=new THREE.InstancedMesh(jitterGeo(new THREE.ConeGeometry(4,8,7),0.4),matStd(0x2f4a1f,0.95,0,{map:texTile(TEX.leaf,4,2)}),300);
   cans.castShadow=true;
   let n=0;
   while(n<300){
@@ -141,7 +141,7 @@ function buildLevel2(){
   }
   [trunks,cans].forEach(function(m){m.count=n;m.instanceMatrix.needsUpdate=true;m.frustumCulled=false;scene2.add(m);});
   // rocks
-  const rocks=new THREE.InstancedMesh(new THREE.DodecahedronGeometry(1.5,0),matStd(0x6a6c52,1),140);
+  const rocks=new THREE.InstancedMesh(jitterGeo(new THREE.DodecahedronGeometry(1.5,0),0.4),matStd(0x6a6c52,1,0,{map:texTile(TEX.rock,2,2)}),140);
   rocks.castShadow=true;
   for(let i=0;i<140;i++){const x=rand(-700,700),z=rand(-700,700);const sc=rand(0.6,2.6);
     rocks.setMatrixAt(i,tMat(x,sc*0.4,z,rand(0,TAU),sc));}

@@ -1,6 +1,9 @@
 'use strict';
 /* ============================== GUN VIEWMODELS ============================== */
 let gunRoot=null,rifleModel=null,shotModel=null,snipModel=null,flashMesh=null,flashLight=null,flashT=0;
+/* viewmodel feel: spring-damper recoil + look-lag sway + sprint pose + land dip */
+const vmRecZ=new Spring(9,0.75),vmRecRX=new Spring(11,0.7),vmRecRZ=new Spring(8,0.65),vmLand=new Spring(5,0.8);
+let vmSwayX=0,vmSwayY=0,vmPrevYaw=0,vmPrevPitch=0,sprintT=0;
 function buildGunModels(){
   gunRoot=new THREE.Group();
   camera.add(gunRoot);
@@ -70,10 +73,11 @@ function muzzleWorld(){
 }
 function doMuzzle(){
   flashT=0.05;
-  flashLight.intensity=2.4;
+  flashLight.intensity=5;
   flashMesh.visible=true;
   flashMesh.rotation.z=rand(0,TAU);
   flashMesh.scale.setScalar(rand(0.8,1.25));
+  burst(muzzleWorld(),3,0xa89a80,1.1,0.8,0.45);
 }
 /* ============================== PICKUPS ============================== */
 const PICKUP_DEFS=[{t:'rifle',x:1.5,z:221},{t:'ammo',x:-3,z:205},{t:'med',x:-14,z:118},
@@ -237,7 +241,13 @@ function fireWeapon(){
   }
   bloom=Math.min(0.05,bloom+w.bloomAdd);
   player.recoil=Math.min(0.1,player.recoil+(player.weapon==='shot'?0.035:player.weapon==='snip'?0.055:0.013));
-  gunKick=player.weapon==='shot'?0.13:player.weapon==='snip'?0.17:0.07;
+  player.yaw+=gauss()*(player.weapon==='shot'?0.0035:player.weapon==='snip'?0.002:0.0014);
+  const kb=player.weapon==='shot'?0.1:player.weapon==='snip'?0.13:0.05;
+  const kr=player.weapon==='shot'?0.09:player.weapon==='snip'?0.12:0.045;
+  vmRecZ.kick(kb*rand(0.85,1.15)*TAU*vmRecZ.f);
+  vmRecRX.kick(kr*rand(0.85,1.2)*TAU*vmRecRX.f);
+  vmRecRZ.kick(gauss()*kr*0.5*TAU*vmRecRZ.f);
+  ejectShell(player.weapon==='shot'?0.5:player.weapon==='snip'?0.7:0);
   doMuzzle();
   if(player.weapon==='shot')sfxShotgun();else if(player.weapon==='snip')sfxSniper();else sfxShot();
   hearGun();
@@ -271,8 +281,9 @@ function dropAim(){
 function updateWeapon(dt){
   fireCd-=dt;
   bloom=Math.max(0,bloom-dt*0.08);
-  gunKick=Math.max(0,gunKick-dt*0.55);
   switchDip=Math.max(0,switchDip-dt);
+  const spTgt=(player.curSpeed>6&&player.grounded&&reloadT<=0&&!G.mouseDown&&aimT<0.1)?1:0;
+  sprintT+=(spTgt-sprintT)*Math.min(1,dt*6);
   if(flashT>0){
     flashT-=dt;
     if(flashT<=0){flashMesh.visible=false;flashLight.intensity=0;}
@@ -286,7 +297,8 @@ function updateWeapon(dt){
   const aimTgt=(aiming&&player.weapon==='snip'&&reloadT<=0&&switchDip<=0)?1:0;
   aimT+=(aimTgt-aimT)*Math.min(1,dt*9);
   if(aimT<0.005)aimT=0;else if(aimT>0.995)aimT=1;
-  const fv=BASE_FOV-(BASE_FOV-SCOPE_FOV)*aimT;
+  const runFov=BASE_FOV+sprintT*6;
+  const fv=runFov-(runFov-SCOPE_FOV)*aimT;
   if(Math.abs(camera.fov-fv)>0.01){camera.fov=fv;camera.updateProjectionMatrix();}
   E.scope.style.opacity=aimT>0.4?(aimT-0.4)/0.6:0;
   E.ch.style.opacity=1-aimT;
@@ -297,10 +309,25 @@ function updateWeapon(dt){
   let dip=0;
   if(reloadT>0&&w)dip=-0.2*Math.sin(Math.min(1,(1-reloadT/w.reload))*Math.PI);
   if(switchDip>0)dip-=switchDip*0.7;
-  const bobX=Math.sin(player.bobT)*0.014*(player.curSpeed>0.5?1:0);
-  const bobY=Math.abs(Math.cos(player.bobT))*0.012*(player.curSpeed>0.5?1:0);
-  gunRoot.position.set(0.34+bobX,-0.3+bobY+dip,-0.62+gunKick);
-  gunRoot.rotation.x=gunKick*0.6;
+  // look-lag sway: the gun trails camera rotation and settles back
+  const dy=wrapAng(player.yaw-vmPrevYaw),dp=player.pitch-vmPrevPitch;
+  vmPrevYaw=player.yaw;vmPrevPitch=player.pitch;
+  const sk=Math.min(1,dt*8);
+  vmSwayY+=(clamp(dy*2.2,-0.06,0.06)-vmSwayY)*sk;
+  vmSwayX+=(clamp(dp*2.2,-0.05,0.05)-vmSwayX)*sk;
+  vmRecZ.step(dt,0);vmRecRX.step(dt,0);vmRecRZ.step(dt,0);vmLand.step(dt,0);
+  const recZ=clamp(vmRecZ.x,-0.02,0.22);
+  const landY=clamp(vmLand.x,-0.1,0.06);
+  const moving=(player.curSpeed>0.5&&player.grounded)?1:0;
+  const bobX=Math.sin(player.bobT)*0.014*moving;
+  const bobY=Math.abs(Math.cos(player.bobT))*0.012*moving;
+  gunRoot.position.set(
+    0.34+bobX+vmSwayY*0.35-sprintT*0.1,
+    -0.3+bobY+dip+landY+Math.sin(G.time*0.9)*0.003-sprintT*0.08,
+    -0.62+recZ+sprintT*0.09);
+  gunRoot.rotation.x=clamp(vmRecRX.x,-0.1,0.5)+vmSwayX+landY*0.6+Math.sin(G.time*1.6)*0.003-sprintT*0.55;
+  gunRoot.rotation.y=-vmSwayY*0.8+sprintT*0.35;
+  gunRoot.rotation.z=clamp(vmRecRZ.x,-0.3,0.3)+vmSwayY*0.5+sprintT*0.12;
 }
 
 /* ============================== COLLISION ============================== */
@@ -378,11 +405,15 @@ function updatePlayer(dt){
   collideXZ(player,player.r);
   const gh=supportHeight(player.pos.x,player.pos.z,player.pos.y);
   if(player.pos.y<=gh){
-    if(!player.grounded&&prevVy<-9){sfxLand();G.shake=Math.min(1,G.shake+0.12);}
+    if(!player.grounded){
+      if(prevVy<-9){sfxLand();G.shake=Math.min(1,G.shake+0.12);}
+      if(prevVy<-3)vmLand.kick(-clamp(-prevVy*0.15,0.5,2.2));
+    }
     player.pos.y=gh;player.vel.y=0;player.grounded=true;
   }else if(player.pos.y>gh+0.02)player.grounded=false;
   if(keys.Space&&player.grounded){
     player.vel.y=7.6;player.grounded=false;
+    vmLand.kick(0.55);
   }
   if(moving&&player.grounded){
     player.bobT+=dt*speed*1.65;
@@ -542,10 +573,19 @@ function cacheDom(){
    'l2hud','l2obj','l2kills','l2warn','l2tut','l2dmg','l2hullIn','l2heatIn',
    'l3hud','l3obj','l3kills','l3sheep','l3ammo','l3res','l3warn','l3tut','l3dmg','l3scope','l3cross',
    'compass','objText','objDist','boss','bossIn','zoneTitle','tut','interact','ch','chT','chB','chL','chR','hitm','scope',
-   'vig','avig','dmgArc','hpIn','stIn','ammoBig','ammoRes','wname','kills','deadStats','winStats','flnote']
+   'vig','avig','dmgArc','hpIn','stIn','ammoBig','ammoRes','wname','kills','deadStats','winStats','flnote','killfeed']
   .forEach(function(id){E[id.replace(/-/g,'_')]=document.getElementById(id);});
   E.cctx=E.compass?E.compass.getContext('2d'):null;
   E.hitmI=E.hitm?E.hitm.querySelectorAll('i'):[];
+}
+function pushKill(name){
+  if(!E.killfeed)return;
+  const div=document.createElement('div');
+  div.className='kf';
+  div.textContent=name;
+  div.addEventListener('animationend',function(){if(div.parentNode)div.parentNode.removeChild(div);});
+  E.killfeed.appendChild(div);
+  while(E.killfeed.children.length>4)E.killfeed.removeChild(E.killfeed.firstChild);
 }
 function show(el){if(el)el.classList.remove('hidden');}
 function hide(el){if(el)el.classList.add('hidden');}
@@ -602,6 +642,7 @@ function updateHUD(dt){
     E.wname.textContent='';
   }else{
     E.ammoBig.textContent=w.mag;
+    E.ammoBig.style.color=w.mag<=Math.max(2,Math.ceil(w.magSize*0.25))?'#e0463a':'#e9e6cb';
     E.ammoRes.textContent=reloadT>0?'RELOADING':('/ '+w.res);
     E.wname.textContent=w.label;
   }
@@ -616,6 +657,7 @@ function updateHUD(dt){
   if(G.hitT>0){
     G.hitT-=dt;
     E.hitm.style.opacity=Math.max(0,G.hitT/0.16);
+    E.hitm.style.transform='scale('+(1+Math.max(0,G.hitT/0.16)*(G.hitKill?0.55:0.3))+')';
     const c=G.hitKill?'#ff4f3a':'#fff';
     for(let i=0;i<E.hitmI.length;i++)E.hitmI[i].style.background=c;
   }else E.hitm.style.opacity=0;
@@ -738,6 +780,9 @@ function resetGame(){
   WPN.shot.mag=6;WPN.shot.res=18;
   WPN.snip.mag=5;WPN.snip.res=10;
   fireCd=0;reloadT=0;bloom=0;gunKick=0;switchDip=0;
+  vmPrevYaw=0;vmPrevPitch=0;vmSwayX=0;vmSwayY=0;sprintT=0;
+  vmRecZ.x=0;vmRecZ.v=0;vmRecRX.x=0;vmRecRX.v=0;vmRecRZ.x=0;vmRecRZ.v=0;vmLand.x=0;vmLand.v=0;
+  if(E.killfeed)E.killfeed.innerHTML='';
   dropAim();
   G.time=0;G.kills=0;G.shots=0;G.hits=0;G.shake=0;
   G.waveOn=false;G.waveT=0;G.waveSpawnT=0;G.waveDilo=false;
@@ -871,6 +916,8 @@ function update(dt){
   updateTracers(dt);
   updateParticles(dt);
   updateSpores(dt);
+  updateShells(dt);
+  updateAmbience(dt);
   updateHUD(dt);
 }
 let lastT=0;
@@ -889,6 +936,7 @@ function animate(now){
     camera.position.set(8+Math.sin(t)*3,5,246);
     camera.lookAt(0,6,208);
   }
+  if(skyDome)skyDome.position.copy(camera.position);
   if(G.state!=='MENU'&&G.level===2)renderer.render(scene2,camera2);
   else if(G.state!=='MENU'&&G.level===3)renderer.render(scene3,camera3);
   else renderer.render(scene,camera);

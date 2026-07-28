@@ -1,5 +1,6 @@
 'use strict';
 function buildWorld(){
+  buildSky();
   buildTerrain();
   buildVegetation();
   buildCrashSite();

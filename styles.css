@@ -1,5 +1,7 @@
 html,body{margin:0;padding:0;overflow:hidden;background:#0b0e07;height:100%;font-family:'Segoe UI',Arial,sans-serif;user-select:none;-webkit-user-select:none;cursor:default}
-canvas#c{display:block}
+canvas#c{display:block;filter:saturate(1.12) contrast(1.05)}
+#grade{position:fixed;inset:0;pointer-events:none;z-index:5;
+  background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(16,20,10,0.34) 100%)}
 .ov{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(7,10,4,.9);z-index:30;text-align:center;color:#cfc89a}
 .hidden{display:none!important}
 .ov h1{font-size:52px;letter-spacing:12px;margin:0 0 8px;color:#e6da9c;text-shadow:0 0 28px rgba(140,170,70,.5);font-weight:800}
@@ -41,6 +43,12 @@ canvas#c{display:block}
 #wname{font-size:10px;letter-spacing:4px;color:#ffd76a;margin-top:4px}
 #tr{position:fixed;right:26px;top:16px;font-size:12px;letter-spacing:3px;color:#cfc89a;text-shadow:0 1px 3px #000}
 #tr span{color:#ffd76a;font-family:Consolas,monospace;font-size:15px}
+#killfeed{position:fixed;right:26px;top:46px;text-align:right;pointer-events:none}
+.kf{font-size:11px;letter-spacing:2px;color:#e8dca2;text-shadow:0 1px 3px #000;margin-top:4px;
+  background:rgba(8,12,5,.45);padding:3px 9px;border-right:2px solid #ffd76a;display:block;
+  animation:kfLife 3.8s forwards}
+@keyframes kfLife{0%{opacity:0;transform:translateX(14px)}6%{opacity:1;transform:translateX(0)}78%{opacity:1}100%{opacity:0}}
+#hitm{transform-origin:0 0}
 #flnote{position:fixed;left:14px;top:12px;font-size:10px;letter-spacing:1px;color:#6d6a4c}
 #scope{position:fixed;left:0;top:0;width:100%;height:100%;opacity:0;pointer-events:none;
   background:radial-gradient(circle at 50% 50%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 31%,rgba(0,0,0,0.55) 33.5%,rgba(0,0,0,0.97) 36%)}

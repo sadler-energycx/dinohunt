@@ -247,6 +247,7 @@ function damageEnemy(e,d){
   }
   if(e.hp<=0)dieEnemy(e);
 }
+const KILL_NAMES={raptor:'RAPTOR DOWN',dilo:'DILOPHOSAUR DOWN',ptera:'PTERANODON DOWN',trex:'TYRANT SLAIN'};
 function dieEnemy(e){
   e.state='DEAD';e.deadT=0;
   G.kills++;G.killFlag=true;
@@ -255,7 +256,9 @@ function dieEnemy(e){
   }else{
     growlSfx(distGain(e.pos,60,0.45));
   }
-  burst(_v1.set(e.pos.x,e.pos.y+e.hitY,e.pos.z),10,0x8a1f14,3,1.2,0.5);
+  if(typeof pushKill==='function')pushKill(KILL_NAMES[e.type]||'TARGET DOWN');
+  burst(_v1.set(e.pos.x,e.pos.y+e.hitY,e.pos.z),14,0x8a1f14,3.2,1.3,0.55);
+  burst(_v1,6,0x5a120c,1.6,0.6,0.8);
 }
 function moveEnemy(e,tx,tz,speed,dt){
   const ang=Math.atan2(tx-e.pos.x,tz-e.pos.z);
@@ -451,6 +454,7 @@ function trexStep(e,dt,rate){
     const d=pDist(e);
     sfxBoom(distGain(e.pos,95,0.55));
     if(d<80)G.shake=Math.min(1,G.shake+0.32*(1-d/80));
+    if(d<50)burst(_v1.set(e.pos.x+rand(-1,1),e.pos.y+0.25,e.pos.z+rand(-1,1)),5,0x8a7a5a,1.8,1.3,0.6);
   }
   e.stepPrev=s;
 }

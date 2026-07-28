@@ -24,18 +24,18 @@ function randLandSpot(margin){
 }
 function buildVegetation(){
   // colossal trees
-  const trunkGeo=new THREE.CylinderGeometry(0.75,1.15,34,7);
-  const trunkMat=matStd(0x4c3a26,0.95);
+  const trunkGeo=jitterGeo(new THREE.CylinderGeometry(0.75,1.15,34,7),0.16);
+  const trunkMat=matStd(0x4c3a26,0.95,0,{map:texTile(TEX.bark,3,7)});
   const trunks=new THREE.InstancedMesh(trunkGeo,trunkMat,140);
   trunks.castShadow=true;
-  const canGeoA=new THREE.ConeGeometry(7.5,11,7);
-  const canMatA=matStd(0x2f4a1f,0.95);
+  const canGeoA=jitterGeo(new THREE.ConeGeometry(7.5,11,7),0.55);
+  const canMatA=matStd(0x2f4a1f,0.95,0,{map:texTile(TEX.leaf,5,3)});
   const canA=new THREE.InstancedMesh(canGeoA,canMatA,140);
-  const canGeoB=new THREE.ConeGeometry(5,8,7);
-  const canMatB=matStd(0x3c5c26,0.95);
+  const canGeoB=jitterGeo(new THREE.ConeGeometry(5,8,7),0.45);
+  const canMatB=matStd(0x3c5c26,0.95,0,{map:texTile(TEX.leaf,4,3)});
   const canB=new THREE.InstancedMesh(canGeoB,canMatB,140);
-  const blobGeo=new THREE.SphereGeometry(4,7,6);
-  const blobMat=matStd(0x55702c,0.95);
+  const blobGeo=jitterGeo(new THREE.SphereGeometry(4,7,6),0.55);
+  const blobMat=matStd(0x55702c,0.95,0,{map:texTile(TEX.leaf,3,2)});
   const blob=new THREE.InstancedMesh(blobGeo,blobMat,140);
   const treeSpots=[];
   let n=0,guard=0;
@@ -91,7 +91,8 @@ function buildVegetation(){
     return tMat(t.x+rand(-4,4),t.y-4.5+rand(-2,2),t.z+rand(-4,4),0,rand(0.7,1.3));
   });
   // mossy rocks
-  const rocks=new THREE.InstancedMesh(new THREE.DodecahedronGeometry(1,0),matStd(0x66684f,1),90);
+  const rocks=new THREE.InstancedMesh(jitterGeo(new THREE.DodecahedronGeometry(1,0),0.28),
+    matStd(0x66684f,1,0,{map:texTile(TEX.rock,2,2)}),90);
   rocks.castShadow=true;
   fillInstanced(rocks,90,function(){
     const s=randLandSpot(0);if(!s)return null;
@@ -102,14 +103,16 @@ function buildVegetation(){
 }
 
 /* ============================== RUINS OF THE OLD WORLD ============================== */
-const CONC=matStd(0x8d8a7e,0.95),CONC2=matStd(0x77746a,0.95),REBAR=matStd(0x4a3326,0.7,0.5);
+const CONC=matStd(0x8d8a7e,0.95,0,{map:texTile(TEX.conc,1.6,1.2)}),
+  CONC2=matStd(0x77746a,0.95,0,{map:texTile(TEX.conc,1.2,1)}),
+  REBAR=matStd(0x4a3326,0.7,0.5);
 function makeRuin(x,z,w,h,d,collapsed){
   const gh=groundHeight(x,z);
   const g=new THREE.Group();
-  const box=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),CONC);
+  const box=new THREE.Mesh(jitterGeo(new THREE.BoxGeometry(w,h,d),Math.min(w,d)*0.09),CONC);
   box.position.y=h/2-0.4;box.castShadow=true;box.receiveShadow=true;
   g.add(box);
-  const top=new THREE.Mesh(new THREE.BoxGeometry(w*0.7,h*0.35,d*0.8),CONC2);
+  const top=new THREE.Mesh(jitterGeo(new THREE.BoxGeometry(w*0.7,h*0.35,d*0.8),Math.min(w,d)*0.09),CONC2);
   top.position.set(rand(-w*0.15,w*0.15),h+h*0.1,rand(-d*0.1,d*0.1));
   top.rotation.z=rand(-0.12,0.12);top.castShadow=true;
   g.add(top);
@@ -120,7 +123,7 @@ function makeRuin(x,z,w,h,d,collapsed){
     rb.rotation.set(rand(-0.5,0.5),0,rand(-0.5,0.5));
     g.add(rb);
   }
-  const moss=new THREE.Mesh(new THREE.BoxGeometry(w*1.02,collapsed?h*0.2:h*0.45,d*1.02),matStd(0x42561f,1));
+  const moss=new THREE.Mesh(new THREE.BoxGeometry(w*1.02,collapsed?h*0.2:h*0.45,d*1.02),matStd(0x42561f,1,0,{map:texTile(TEX.leaf,2,1)}));
   moss.position.y=(collapsed?h*0.1:h*0.22)-0.35;
   g.add(moss);
   g.position.set(x,gh,z);
@@ -176,7 +179,7 @@ function makeBillboard(x,z,ry,line1,line2){
 }
 function buildCrashSite(){
   const g=new THREE.Group();
-  const fm=matStd(0xbfbcb2,0.7,0.35);
+  const fm=matStd(0xbfbcb2,0.7,0.35,{map:texTile(TEX.conc,2,1)});
   const fus=new THREE.Mesh(new THREE.CylinderGeometry(2.3,2.3,16,12),fm);
   fus.rotation.z=Math.PI/2;fus.rotation.y=0.5;fus.position.set(-11,1.5,225);
   fus.castShadow=true;g.add(fus);
@@ -201,8 +204,8 @@ function buildCrashSite(){
   fire.position.set(-6,2,222);scene.add(fire);
 }
 function buildHighway(){
-  const slabGeo=new THREE.BoxGeometry(8,0.45,12);
-  const slabMat=matStd(0x707064,0.95);
+  const slabGeo=jitterGeo(new THREE.BoxGeometry(8,0.45,12),0.16);
+  const slabMat=matStd(0x707064,0.95,0,{map:texTile(TEX.conc,2,1.5)});
   for(let z=200;z>-64;z-=17){
     if(Math.abs(z)<15)continue;
     if(Math.random()<0.22)continue;
@@ -227,7 +230,7 @@ function buildCity(){
   makeBillboard(28,66,-2.6,'LAST EXIT','FUEL  FOOD');
 }
 function buildBridge(){
-  const dm=matStd(0x6d6d62,0.95),rm=matStd(0x55584e,0.85,0.3);
+  const dm=matStd(0x6d6d62,0.95,0,{map:texTile(TEX.conc,1.5,1)}),rm=matStd(0x55584e,0.85,0.3);
   function deck(zc,len){
     const d=new THREE.Mesh(new THREE.BoxGeometry(5,0.5,len),dm);
     d.position.set(8,1.15,zc);d.castShadow=true;d.receiveShadow=true;
@@ -306,11 +309,12 @@ function buildBeaconFx(){
   scene.add(beaconBeam);
 }
 function buildCanyon(){
-  const rockM=matStd(0x6e6a58,1),mossM=matStd(0x4c5a30,1);
+  const rockM=matStd(0x6e6a58,1,0,{map:texTile(TEX.rock,2.5,2)}),
+    mossM=matStd(0x4c5a30,1,0,{map:texTile(TEX.leaf,2,1)});
   for(let side=-1;side<=1;side+=2){
     for(let z=-150;z>-214;z-=8.5){
       const w=rand(6,10),h=rand(9,16),x=side*(19+rand(0,5));
-      const b=new THREE.Mesh(new THREE.BoxGeometry(w,h,10),rockM);
+      const b=new THREE.Mesh(jitterGeo(new THREE.BoxGeometry(w,h,10),Math.min(w,h)*0.11),rockM);
       b.position.set(x,groundHeight(x,z)+h/2-1.5,z);
       b.rotation.y=rand(-0.12,0.12);b.castShadow=true;b.receiveShadow=true;
       scene.add(b);addObsB(b);
@@ -321,7 +325,7 @@ function buildCanyon(){
   }
   // entrance pillars
   for(const sx of [-15,15]){
-    const p=new THREE.Mesh(new THREE.CylinderGeometry(2,2.8,12,7),rockM);
+    const p=new THREE.Mesh(jitterGeo(new THREE.CylinderGeometry(2,2.8,12,7),0.4),rockM);
     p.position.set(sx,groundHeight(sx,-148)+5,-148);
     p.castShadow=true;scene.add(p);addObsB(p);
   }
@@ -340,7 +344,7 @@ function buildCanyon(){
 }
 const turrets=[];
 function buildHaven(){
-  const wallM=matStd(0x9b988c,0.95);
+  const wallM=matStd(0x9b988c,0.95,0,{map:texTile(TEX.conc,3,1)});
   for(const def of [[-23,34],[23,34]]){
     const w=new THREE.Mesh(new THREE.BoxGeometry(def[1],10,3),wallM);
     w.position.set(def[0],groundHeight(def[0],-228)+4.6,-228);

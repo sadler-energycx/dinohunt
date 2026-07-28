@@ -94,10 +94,10 @@ function buildLevel3(){
   }
   geo.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));
   geo.computeVertexNormals();
-  const gm=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({vertexColors:true,roughness:1}));
+  const gm=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({vertexColors:true,roughness:1,map:texTile(TEX.grass,170,170)}));
   gm.receiveShadow=true;scene3.add(gm);
   // ---- the rampart the player stands on (a stone keep wall) ----
-  const stone=matStd(0x8a8678,0.95),stoneD=matStd(0x6f6c60,0.95);
+  const stone=matStd(0x8a8678,0.95,0,{map:texTile(TEX.conc,2.5,1)}),stoneD=matStd(0x6f6c60,0.95,0,{map:texTile(TEX.conc,2,1.5)});
   const base=new THREE.Mesh(new THREE.BoxGeometry(26,9,12),stone);
   base.position.set(0,4.5,74);base.castShadow=true;base.receiveShadow=true;scene3.add(base);
   const deck=new THREE.Mesh(new THREE.BoxGeometry(24,0.6,10),stoneD);
@@ -116,8 +116,8 @@ function buildLevel3(){
     w.position.set(sx*11.5,10.1,74);w.castShadow=true;scene3.add(w);
   }
   // ---- scattered trees / rocks at the field edges ----
-  const trunks=new THREE.InstancedMesh(new THREE.CylinderGeometry(0.5,0.8,8,6),matStd(0x4c3a26,0.95),160);
-  const cans=new THREE.InstancedMesh(new THREE.ConeGeometry(4,8,7),matStd(0x335520,0.95),160);
+  const trunks=new THREE.InstancedMesh(jitterGeo(new THREE.CylinderGeometry(0.5,0.8,8,6),0.12),matStd(0x4c3a26,0.95,0,{map:texTile(TEX.bark,2,3)}),160);
+  const cans=new THREE.InstancedMesh(jitterGeo(new THREE.ConeGeometry(4,8,7),0.4),matStd(0x335520,0.95,0,{map:texTile(TEX.leaf,4,2)}),160);
   cans.castShadow=true;
   let n=0;
   while(n<160){
@@ -130,7 +130,7 @@ function buildLevel3(){
     n++;
   }
   [trunks,cans].forEach(function(m){m.count=n;m.instanceMatrix.needsUpdate=true;m.frustumCulled=false;scene3.add(m);});
-  const rocks=new THREE.InstancedMesh(new THREE.DodecahedronGeometry(1.4,0),matStd(0x73715a,1),90);
+  const rocks=new THREE.InstancedMesh(jitterGeo(new THREE.DodecahedronGeometry(1.4,0),0.38),matStd(0x73715a,1,0,{map:texTile(TEX.rock,2,2)}),90);
   rocks.castShadow=true;
   for(let i=0;i<90;i++){const x=rand(-500,500),z=rand(-500,250);const sc=rand(0.6,2.2);
     rocks.setMatrixAt(i,tMat(x,sc*0.3,z,rand(0,TAU),sc));}
